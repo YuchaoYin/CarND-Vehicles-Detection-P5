@@ -43,7 +43,7 @@ def bin_spatial(img, size=(32, 32)):
 return features
 ```
 
-### 2. Color Histogram Features
+#### 2. Color Histogram Features
 I also used histograms of pixel intensity (color histograms) as features.
 Here is the code:
 ```
@@ -60,6 +60,7 @@ def color_hist(img, nbins=32, bins_range=(0, 256)):
 return hist_features
 ```
 The following figure shows the result using RGB color space. But actually in the end, I used YCrCb color space to train the model.
+
 ![alt text][image2]
 
 #### 3. Histogram of Oriented Gradients (HOG)
@@ -69,6 +70,7 @@ The code can be found in [hog_subsampling.py](hog_subsampling.py)
 The hog() function takes in a single color channel or grayscaled image as input, as well as various parameters. These parameters include orientations, pixels_per_cell and cells_per_block. 
 I extracted HOG features from all color channels. 
 here is an example of one channel result:
+
 ![alt text][image3]
 
 #### 4. Parameters Configuration
@@ -109,6 +111,7 @@ In order to overcomet this, I implemented a heat-map with threshold.
 The code is in [heatmap.py](heatmap.py).
 
 Final result:
+
 ![alt text][image5]
 
 
@@ -126,8 +129,6 @@ Here's a [link to my video result](./out_video_project2.mp4)
 ---
 
 
-
----
 
 ### Discussion
 
