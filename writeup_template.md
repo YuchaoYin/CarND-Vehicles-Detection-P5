@@ -15,8 +15,6 @@ The goals / steps of this project are the following:
 [image3]: ./output_images/hog_feature.png
 [image4]: ./output_images/hot_windows.png
 [image5]: ./output_images/Heat_Map.png
-[image6]: ./examples/labels_map.png
-[image7]: ./examples/output_bboxes.png
 [video1]: ./project_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -28,6 +26,7 @@ For this project we used the dataset for vehicles and non-vehicles.
 The code can be found in [data_exploration.py](data_exploration.py)
 The function returned a count of 8792  cars and 8968  non-cars of size:  (64, 64, 3)  and data type: float32
 Here is an example of car and not-car images:
+
 ![alt text][image1]
 
 ### Features Extraction
